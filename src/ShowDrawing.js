@@ -10,7 +10,8 @@ import hangman_9 from "./hangman_9.png";
 import hangman10 from "./hangman10.jpg";
 
 const ShowDrawing = ({drawingIndex}) => {
-    let source = [hangman_1,hangman_2,hangman_3,hangman_4,hangman_5,hangman_6,hangman_7,hangman_8,hangman_9,hangman10]
+    let source = [hangman_1,hangman_2,hangman_3,hangman_4,hangman_5,hangman_6,hangman_7,hangman_8,hangman_9,hangman10]//pictures in Array
+    //print to web page corresponding picture
     return (
         <>
             <img src={source[drawingIndex-1]} alt="hangman"/>

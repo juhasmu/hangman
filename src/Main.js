@@ -7,9 +7,9 @@ import ShowGuessedChars from "./ShowGuessedChars";
 
 const Main = ({toGuessChars}) => {
     
-    let [count,setCount] = useState(0);
+    let [count,setCount] = useState(0);//make count variable
     let [guessedChars,setGuessedChars]=useState([]);
-    if(count<1){
+    if(count<1){//if there are no wrong answers do not draw picture
         return (
             <>
                 <ShowWord toGuessChars={toGuessChars} guessedChars={guessedChars}/>
@@ -17,7 +17,7 @@ const Main = ({toGuessChars}) => {
                 <ShowGuessedChars guessedChars={guessedChars}/>  
             </>
         )}
-    else if(count>10){
+    else if(count>10){//if there 10 wrong answers draw picture and Game Over but no keyboard
         return (
             <>
                 <ShowDrawing drawingIndex={10}/>
@@ -25,7 +25,7 @@ const Main = ({toGuessChars}) => {
             </>
         )
     }
-    else{
+    else{//show all
     return (
         <>
             <ShowDrawing drawingIndex={count}/>
