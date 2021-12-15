@@ -1,0 +1,22 @@
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p.GameOver{
+  font-size: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+button.reload{
+  color :white;
+  background-color: black;
+  width: 100%;
+}
+button.keyboard{
+  color :white;
+  background-color: black;
+}
+h1.Header{
+  text-align: center;
+}
