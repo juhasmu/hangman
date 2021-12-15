@@ -20,3 +20,6 @@ button.keyboard{
 h1.Header{
   text-align: center;
 }
+img{
+  max-height: 350px;
+}
