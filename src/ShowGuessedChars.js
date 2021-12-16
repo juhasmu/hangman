@@ -1,5 +1,5 @@
 
-const ShowGuessedChars = ({guessedChars}) => {
+const ShowGuessedChars = ({guessedChars}) => {//shows guessed chars
     let txt=''
     for(let char of guessedChars)txt=`${txt} ${char}`;
 
